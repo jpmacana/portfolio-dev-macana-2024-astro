@@ -7,6 +7,9 @@ import Node from '../icons/Node.astro';
 import React from '../icons/React.astro';
 import Tailwind from '../icons/Tailwind.astro';
 import Vite from '../icons/Vite.astro';
+import Stripe from '../icons/Stripe.astro';
+import Typescript from '../icons/Typescript.astro';
+import Prisma from '../icons/Prisma.astro';
 const TAGS = {
   NEXT: {
     nane: "Next.js",
@@ -28,7 +31,7 @@ const TAGS = {
   },
   NODEJS: {
     nane: "Node.js",
-    class: "bg-black-500 text-white",
+    class: "bg-emerald-500 text-white",
     icon: Node
     ,
   },
@@ -40,9 +43,31 @@ const TAGS = {
   },
   VITE: {
     nane: "Vite.js",
-    class: "bg-black-900 text-white",
+    class: "bg-violet-900 text-white",
     icon: Vite
     ,
+    
+  },
+  STRIPE: {
+    nane: "Stripe",
+    class: "bg-blue-900 text-white",
+    icon: Stripe
+    ,
+
+  },
+  TYPESCRIPT: {
+    nane: "Typescript",
+    class: "bg-blue-900 text-white",
+    icon: Typescript
+    ,
+
+  },
+  PRISMA: {
+    nane: "Prisma",
+    class: "bg-blue-900 text-white",
+    icon: Prisma
+    ,
+
   },
 };
 const PROYECTOS = [
@@ -54,6 +79,15 @@ const PROYECTOS = [
     github: "https://github.com/jpmacana/Github-Clone-MongoDB",
     link: "https://github-clone-mongodb.onrender.com/",
     tags: [TAGS.REACT,TAGS.NEXT, TAGS.TAILWIND,TAGS.NODEJS,TAGS.MONGODB,TAGS.VITE],
+  },
+  {
+    title: "Saas Macana",
+    descripcion:
+      "App sencilla para el manejo de notas rapidas para el usuario, con stripe para pagar una subscripcion mensual.",
+    image: "/assets/saas.png",
+    github: "https://github.com/jpmacana/saas-macana-next-typescript",
+    link: "https://saas-macana-next-typescript.vercel.app/",
+    tags: [TAGS.NEXT, TAGS.TAILWIND,TAGS.NODEJS,TAGS.MONGODB,TAGS.PRISMA,TAGS.STRIPE],
   },
   {
     title: "RST Institucional",
